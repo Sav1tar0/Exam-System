@@ -1,0 +1,275 @@
+ *{
+    margin: 0;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(34, 58, 54);
+}
+
+#page{
+    width: 70%;
+    margin: auto;
+    border: 4px solid rgb(211, 198, 140);
+}
+
+/*Header*/
+#titop{
+    text-align: center;
+    font: serif;
+    color: rgb(240, 236, 219);
+    background-color: rgb(44, 71, 67);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#titop p{
+    padding: 0%;
+}
+
+
+#top{
+    background-color:  rgb(240, 236, 219);
+    height: 50px;
+}
+
+.menu{
+    margin-top: 10px;
+    float: left;
+}
+
+.menu button{
+    background-color:  rgb(240, 236, 219);
+    color: rgb(34, 58, 54);
+    padding: 8px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menu a{
+    display: block;
+    color:   rgb(34, 58, 54) ;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+
+.menu #content{
+    display: none;
+    position: absolute;
+    background-color: rgb(233, 227, 196);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.menu #content #selected{
+    background-color: rgb(199, 183, 117);
+}
+
+.menu:hover #content{
+    display: block;
+}
+
+
+.menu:hover button{
+    background-color:rgb(225, 211, 155) ;
+}
+
+
+.menu a:hover{
+    background-color:rgb(225, 211, 155) ;
+}
+
+
+#topnav{
+    display: flex;
+    float: left;
+    margin-left: 18%;
+    padding-top: 15px ;
+}
+
+#topnav a{
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(34, 58, 54) ;
+}
+
+#topnav a:hover{
+    background-color:rgb(225, 211, 155) ;
+}
+
+#sea{
+    justify-self: right;
+    padding: 12px;
+}
+
+/*Main*/
+main{
+    display: flex;
+}
+
+#sidenav{
+    background-color: rgb(44, 71, 67) ;
+    margin-top: 0;
+    width: 30%;
+    padding-bottom: 20px;
+    display: inline-block;
+}
+
+#sidenav  h3{
+    color: rgb(199, 183, 117) ;
+    font: serif;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.ulside{
+    margin-bottom: 40px;
+}
+
+#sidenav  ul{
+    text-decoration: none;
+    color: rgb(225, 211, 155);
+}
+
+#sidenav a{
+    text-decoration: none;
+    color:rgb(225, 211, 155) ;
+}
+
+#sidenav li{
+    padding: 10px;
+    display: block;
+}
+
+#sidenav li:hover{
+    background-color:rgb(47, 81, 75) ;
+}
+
+article{
+    width: 70%;
+    padding-bottom: 20px;
+    background-color: rgb(246, 244, 235);
+}
+
+article::before{
+    background-image: url(images/blogo.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    position: fixed;
+}
+
+article h2{
+    color: hsl(44, 61%, 65%);
+    padding: 20px 2px;
+    margin: 10px;
+    width: 70%;
+}
+
+article p{
+    padding: 2px 8px;
+    color: rgb(51, 77, 73) ;
+}
+
+article ul{
+    margin: 10px;
+    color: rgb(51, 77, 73) ;
+}
+
+
+article li{
+    padding: 5px 10px;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+
+}
+
+#footnav{
+    display: block;
+}
+
+#column1{
+    width: 28%;
+    background-color: hsl(44, 61%, 65%);
+    padding-left: 20px;
+    padding-top: 20px;
+    float: left;
+    height: 150px;
+}
+
+#column1 a{
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: hsla(143, 32%, 21%, 0.893);
+}
+
+#column1 a:hover{
+    font-size: larger;
+    color: hsla(144, 34%, 28%, 0.893);
+}
+
+#column2{
+    background-color: hsl(44, 61%, 65%);
+    color: hsla(143, 32%, 21%, 0.893);
+    float: left;
+    width: 30%;
+    height: 170px;
+}
+
+#column2 h4{
+    font-size: larger;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#column2 p{
+    padding: 10px 40px;
+}
+
+#map{
+    background-color: hsl(44, 61%, 65%) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 170px;
+}
+
+#terms{
+    display: flex;
+    justify-content: center;
+    background-color: hsla(143, 32%, 21%, 0.893) ;
+    padding: 10px;
+
+}
+
+#terms a,pre{
+    text-decoration: none;
+    color:hsl(44, 61%, 65%);
+    padding-left: 2px;
+}
+
+.side-logo {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.left-logo {
+    left: 0;
+}
+
+.right-logo {
+    right: 0;
+}
+
+.side-logo img {
+    width: 100%;
+}
